@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(){
         // agarramos el valor o contenido de la caja de texto input
         //El cual retorna un tipo string
        
-        var cliente = document.getElementById("input-name")
+        var cliente = document.getElementById("input-name").value;
         var valueancho= parseFloat(document.getElementById("input-Largo-piso").value)
         var valuelargo = parseFloat(document.getElementById("input-Ancho-piso").value)
         var valueprecio = parseFloat(document.getElementById("input-precio").value)
@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function(){
            
             var precioTotal= (cantidadAzulejos * valueprecio)
            
-            var desglose = alert("PARA EL CLIENTE" + cliente+"✨"+
-                "✨EL ÁREA DE lA SUPERFICIE EN cm^2 : " + areaSuperficie
-                +"✨LA CANTIDAD DE AZULEJOS : " + cantidadAzulejos +
-                "✨EL PRECIO TOTAL ES DE $"+precioTotal
+            var desglose = alert("\nPARA EL CLIENTE: " + cliente+"✨"+
+                "\n✨EL ÁREA DE LA SUPERFICIE EN cm^2 : " + areaSuperficie
+                +"\n✨LA CANTIDAD DE AZULEJOS : " + cantidadAzulejos +
+                "\n💲EL PRECIO TOTAL ES DE                      $"+precioTotal
             )
 
     })
